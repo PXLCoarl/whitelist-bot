@@ -6,7 +6,7 @@ from utilities import InfoEmbed, ErrorEmbed, MCClient
 import os
 
 async def setup(bot: WhitelistBot) -> None:
-    await bot.add_cog(Info(bot), guild=Object(841127630564622366))
+    await bot.add_cog(Info(bot))
     
     
 class Info(commands.Cog):

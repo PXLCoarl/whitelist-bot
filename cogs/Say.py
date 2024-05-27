@@ -6,7 +6,7 @@ from utilities import MCClient, SuccessEmbed
 
 
 async def setup(bot: WhitelistBot) -> None:
-    await bot.add_cog(Say(bot), guild=Object(841127630564622366))
+    await bot.add_cog(Say(bot))
     
     
 class Say(commands.Cog):
