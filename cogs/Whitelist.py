@@ -6,7 +6,7 @@ from utilities import logger, check_username, ErrorEmbed, InfoEmbed, SuccessEmbe
 import os
 
 async def setup(bot: WhitelistBot) -> None:
-    await bot.add_cog(Whitelist(bot))
+    await bot.add_cog(Whitelist(bot), guilds=[Object(841127630564622366), Object(1218637404194214020), Object(1019608824023371866)])
     
 class ConfirmView(View):
     def __init__(self, *, new_name: str):
